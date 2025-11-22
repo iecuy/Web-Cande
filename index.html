@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Candela - Diseñadora gráfica y visual">
+    <meta name="theme-color" content="#FFFFFF">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='24' font-size='24' font-weight='bold'>C</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Candela - Diseñadora Gráfica & Visual</title>
+</head>
+<body>
+    <!-- NAVEGACIÓN STICKY -->
+    <nav class="navbar">
+        <div class="container">
+            <!-- cambiar "Candela" por una imagen de logo -->
+            <div class="nav-brand">
+                <img src="Portfolio/images/Logo portfolio web.png" alt="Logo" class="navbar-logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#sobremi">Sobre mí</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+     <!-- INICIO / HERO -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <div class="video-container">
+                <video autoplay muted loop playsinline>
+                    <source src="Portfolio/images/RECA VIDEO finañ.mp4"vtype="video/mp4">
+                    Tu navegador no soporta video HTML5.
+                </video>
+                <!-- eliminado el logo del centro del video -->
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="proyectos">
+        <div class="container">
+            <h2>Proyectos</h2>
+            
+            <!-- Filtros por categoría -->
+            <div class="filtros">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="identidad">Identidad Visual</button>
+                <button class="filter-btn" data-filter="afiches">Afiches</button>
+                <button class="filter-btn" data-filter="senaletica">Señalética</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+            </div>
+
+           <!-- Grilla de Proyectos -->
+<div class="proyectos-grid">
+    <!-- Proyecto 1: Identidad Visual -->
+    <div class="proyecto-card" data-category="identidad">
+        <div class="proyecto-image">
+           <img src="Portfolio/images/dh.jpg" alt="Foto de perfil">
+            <div class="overlay">
+                <a href="pages/proyecto-identidad-visual.html" class="btn-ver">Ver proyecto</a>
+            </div>
+        </div>
+        <div class="proyecto-info">
+            <h3>Identidad Visual</h3>
+            <span class="categoria">Identidad Visual</span>
+        </div>
+    </div>
+
+    <!-- Proyecto 2: Afiches Urbanos -->
+    <div class="proyecto-card" data-category="afiches">
+        <div class="proyecto-image">
+         <img src="Portfolio/images/Afiches Cle.jpg" alt="Foto de perfil">
+            <div class="overlay">
+                <a href="pages/proyecto-afiches-urbanos.html" class="btn-ver">Ver proyecto</a>
+            </div>
+        </div>
+        <div class="proyecto-info">
+            <h3>Afiches Urbanos</h3>
+            <span class="categoria">Afiches</span>
+        </div>
+    </div>
+
+<!-- Proyecto 3: Señalética -->
+<div class="proyecto-card" data-category="senaletica">
+    <div class="proyecto-image">
+         <img src="Portfolio/images/Untitled design.jpg" alt="Foto de perfil">
+        <div class="overlay">
+            <a href="pages/proyecto-senaletica.html" class="btn-ver">Ver proyecto</a>
+        </div>
+    </div>
+    <div class="proyecto-info">
+        <h3>Señalética</h3>
+        <span class="categoria">Señalética</span>
+    </div>
+</div>
+
+
+    <!-- Proyecto 4: Mocktail Branding -->
+    <div class="proyecto-card" data-category="branding">
+        <div class="proyecto-image">
+             <img src="Portfolio/images/SODA 4.jpg" alt="Foto de perfil">
+            <div class="overlay">
+                <a href="pages/proyecto-mocktail.html" class="btn-ver">Ver proyecto</a>
+            </div>
+        </div>
+        <div class="proyecto-info">
+            <h3>Mocktail Branding</h3>
+            <span class="categoria">Branding</span>
+        </div>
+    </div>
+
+    <!-- Proyecto 5: Ilustraciones -->
+    <div class="proyecto-card" data-category="ilustraciones">
+        <div class="proyecto-image">
+             <img src="Portfolio/images/ilus.jpg" alt="Foto de perfil">
+            <div class="overlay">
+                <a href="pages/proyecto-ilustraciones.html" class="btn-ver">Ver galería</a>
+            </div>
+        </div>
+        <div class="proyecto-info">
+            <h3>Ilustraciones</h3>
+            <span class="categoria">Ilustraciones</span>
+        </div>
+    </div>
+
+    <!-- Proyecto 6: Infografía -->
+    <div class="proyecto-card" data-category="infografia">
+        <div class="proyecto-image">
+            <img src="Portfolio/images/INFO 2.jpg" alt="Foto de perfil">
+            <div class="overlay">
+                <a href="pages/proyecto-infografia.html" class="btn-ver">Ver proyecto</a>
+            </div>
+        </div>
+        <div class="proyecto-info">
+            <h3>Infografía</h3>
+            <span class="categoria">Infografía</span>
+        </div>
+    </div>
+</div>
+
+    </section>
+  <!-- SOBRE MÍ -->
+<section id="sobremi" class="sobremi">
+    <div class="container">
+        <div class="sobremi-grid">
+            <div class="sobremi-image">
+                <img src="Portfolio/images/WhatsApp Image 2025-11-05 at 20.04.14.jpeg" alt="Foto de perfil">
+                 <img src="Portfolio/images/Logo Ig.jpg" alt="Foto de perfil">
+            </div>
+            <div class="sobremi-content">
+                <div class="sobremi-card">
+                    <h2>Sobre mí</h2>
+                    <p>Soy Candela, diseñadora gráfica y visual apasionada por crear experiencias que conecten e inspiren. Me especializo en identidad visual, afiches, señalética y branding, donde transformo ideas en diseños memorables y llenos de intención.
+
+Creo en el diseño como un puente entre concepto y emoción. Cada proyecto es una oportunidad para explorar nuevas posibilidades, comunicar con claridad y dejar una huella positiva a través de soluciones visuales coherentes y sensibles.
+                </div>
+                
+                <!-- Added three value boxes: Misión, Visión, and Propuesta de Valor -->
+                <div class="sobremi-values-grid">
+                    <div class="value-box mision">
+                        <h3>Misión</h3>
+                        <p>Crear diseños claros y sensibles que transformen ideas en identidades visuales memorables. Mi misión es comunicar con intención y revelar la verdadera esencia de cada proyecto.</p>
+                    </div>
+                    <div class="value-box vision">
+                        <h3>Visión</h3>
+                        <p>Ser una diseñadora reconocida por convertir conceptos en experiencias visuales que inspiran, conectan y generan impacto real a través del diseño.</p>
+                    </div>
+                    <div class="value-box propuesta">
+                        <h3>Propuesta de Valor</h3>
+                        <p>Combino investigación, estrategia y creatividad para transformar ideas en marcas con personalidad y propósito, diseñando experiencias visuales y comunicacionales coherentes y significativas, capaces de generar impacto, destacar frente a la competencia y dejar una huella memorable en la memoria y la percepción de su público.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p class="contacto-subtitle">¿Tienes un proyecto en mente? Me encantaría escucharte.</p>
+
+            <form id="contactForm" class="contacto-form">
+                <div class="form-group">
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="mensaje" name="mensaje" placeholder="Mensaje" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Enviar</button>
+            </form>
+
+            <div class="contacto-social">
+                <p>También puedes encontrarme en:</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/reca.uy/?hl=es" class="social-icon" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <circle cx="17.5" cy="6.5" r="1.5"></circle>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/candela-r%C3%A9-25930739a/" class="social-icon" aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                 <a href="https://www.behance.net/cander2" class="social-icon" aria-label="Behance">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <!-- B -->
+        <text x="3" y="16" font-size="13" font-family="Arial, sans-serif" font-weight="bold">B</text>
+        <!-- é -->
+        <text x="13" y="16" font-size="13" font-family="Arial, sans-serif" font-weight="bold">é</text>
+    </svg>
+</a>
+
+    
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Candela. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

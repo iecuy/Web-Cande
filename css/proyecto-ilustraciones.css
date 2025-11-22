@@ -1,0 +1,171 @@
+/* Custom styles for Ilustraciones project */
+
+/* Override intro section layout for ilustraciones */
+.proyecto-ilustraciones .proyecto-intro-ilustraciones {
+    background: var(--white);
+    border: 1px solid #e0e0e0;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.proyecto-ilustraciones .intro-text h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--black);
+}
+
+.proyecto-ilustraciones .intro-text p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* ===== Galería Ilustraciones (rectángulos A4 con hover) ===== */
+.galeria-ilustraciones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin: 3rem 0;
+    padding: 0;
+}
+
+.galeria-ilustraciones .ilustracion-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid var(--orange);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    transition: all 0.3s ease;
+}
+
+.galeria-ilustraciones .ilustracion-container img {
+    width: 100%;
+    aspect-ratio: 210 / 297; /* fuerza proporción A4 vertical */
+    object-fit: contain;
+    display: block;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover escala y sombra */
+.galeria-ilustraciones .ilustracion-container:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.2);
+}
+
+/* Overlay de título */
+.galeria-ilustraciones .ilustracion-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    padding: 0.5rem;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.galeria-ilustraciones .ilustracion-container:hover .ilustracion-title {
+    opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .galeria-ilustraciones {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.2rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .galeria-ilustraciones {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .galeria-ilustraciones {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+
+/* ⭐ CONTENEDOR CONTROLADO PARA EL HERO */
+.proyecto-hero-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===== LIGHTBOX GLOBAL ===== */
+.lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 20px;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+    transition: transform 0.25s ease;
+}
+
+/* Flechas */
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    opacity: 0.7;
+}
+
+.lightbox-prev {
+    left: 30px;
+}
+
+.lightbox-next {
+    right: 30px;
+}
+
+/* Botón X */
+.lightbox-close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 45px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.2s;
+}
+
+
+
+
